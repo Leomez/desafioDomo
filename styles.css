@@ -1,0 +1,267 @@
+body {
+    font-family: inter, sans-serif;    
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.description p {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.header {
+    background-color: white;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu-button {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #2e2e2e;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-button div {
+    width: 13px;
+    height: 2px;
+    background-color: #2e2e2e;
+    position: absolute;
+}
+
+.menu-button .line1 {
+    top: 22px;
+}
+
+.menu-button .line2 {
+    top: 27px;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.circle-container div {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.circle {
+    transition: transform 0.3s;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: white;
+    margin: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 150px;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+body.light-theme .header {
+    background-color: white;
+}
+
+body.dark-theme .header {
+    background-color: black;
+}
+
+.blue {
+    background-color: #015aff;
+}
+
+.purple {
+    background-color: #b302fe;
+}
+
+.green {
+    background-color: #00ff43;
+}
+
+.red {
+    background-color: #ff2b03;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.brand p {
+    margin: 0;
+}
+
+.brand-logo {
+    width: 40px;
+    margin: 15px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.personal-data {
+    width: 30%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.footer-separator {
+    height: 160px; 
+    width: 1px; 
+    background-color: #9d9d9d; 
+    margin: 0 20px; 
+}
+
+.description-footer {
+    max-width: 500px; 
+}
+
+@media (max-width: 1200px) {
+    body {
+        width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        font-size: 1rem;
+        line-height: 150px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        margin: 12px;
+    }
+
+    .personal-data {
+        /* display: flex; */
+        /* width: auto; */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        /* justify-content: center; */
+    }
+
+    .footer-separator {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .circle {
+        width: 120px;
+        height: 120px;
+        font-size: 0.9rem;
+        line-height: 120px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        margin: 10px;
+    }
+
+    .circle-container div {
+        font-size: 12px;        
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .personal-data {
+        /* display: flex; */
+        width: auto;
+    }
+
+    .footer-separator {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+        font-size: 0.7rem;
+        line-height: 100px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        margin: 8px;
+    }
+    .description p {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .circle-container div {
+        font-size: 11px;        
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-separator {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+}
